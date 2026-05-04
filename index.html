@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">MyPortfolio</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+        <button id="theme-toggle">Dark Mode</button>
+    </nav>
+
+    <header class="hero">
+    <img src="ayazkhan.png" alt="Hidayatullah" class="profile-pic">
+
+    <h1>Hi, I'm <span class="highlight">HIDAYATULLAH</span></h1>
+    <p>Web Developer & IT Specialist</p>
+</header>
+
+
+
+<div class="container">
+    <section id="about" class="about-section">
+    <h2>About Me</h2>
+    <div class="about-content">
+        <p>Main ek passionate <strong>Web Developer aur IT Specialist</strong> hoon. Mujhe modern websites banane aur technical problems solve karne ka bohot shauq hai.</p>
+        
+        <p>Meri khasiyat <strong>Advanced MS Excel</strong> hai, jahan main 70+ formulas (VLOOKUP, XLOOKUP, IF functions) aur data automation mein maharat rakhta hoon. Iske sath sath main <strong>HTML, CSS, aur JavaScript</strong> ke zariye responsive web projects par kaam kar raha hoon.</p>
+        
+        <p>Main hamesha apni skills ko behtar banane aur nayi technologies seekhne ke liye koshish karta rehta hoon taake apne clients aur projects ko behtareen results de sakoon.</p>
+    </div>
+</section>
+
+
+    <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/xpqovdek" method="POST" id="contact-form">
+        <label>Your Name:</label>
+        <input type="text" name="name" placeholder="Apna Naam likhein" required>
+        
+        <label>Your Email:</label>
+        <input type="email" name="_replyto" placeholder="Apni Email likhein" required>
+        
+        <label>Your Message:</label>
+        <textarea name="message" placeholder="Mujhe message bhejein..." rows="5" required></textarea>
+        
+        <button type="submit" class="btn-submit">Send Message</button>
+    </form>
+</section>
+
+
+</div>
+
+
+
+
+
+    <section id="skills">
+    <h2>My Skills (Click to see details)</h2>
+    
+    <div class="skills-grid">
+        <div class="skill-card" onclick="showDetail('html-info')">HTML & CSS</div>
+        <div class="skill-card" onclick="showDetail('js-info')">JavaScript</div>
+        <div class="skill-card" onclick="showDetail('excel-info')">Advanced Excel</div>
+    </div>
+
+    <div id="details-container" class="details-box">
+        
+        <div id="html-info" class="skill-content">
+            <h3>HTML5 & CSS3 Expertise</h3>
+            <p>Main responsive websites banana janta hoon.</p>
+            <ul class="detail-list">
+                <li><b>Structure:</b> Semantic HTML5 aur Form validation.</li>
+                <li><b>Design:</b> CSS Flexbox aur Grid System.</li>
+                <li><b>Responsiveness:</b> Mobile-friendly designs.</li>
+            </ul>
+            <div class="progress-bar"><div class="progress html-progress"></div></div>
+            <span>Expertise Level: 90%</span>
+        </div>
+
+        <div id="js-info" class="skill-content">
+            <h3>JavaScript Development</h3>
+            <p>Interactive web features par kaam karta hoon.</p>
+            <ul class="detail-list">
+                <li><b>DOM:</b> Elements ko dynamic control karna.</li>
+                <li><b>Events:</b> Click aur Scroll handling.</li>
+                <li><b>Projects:</b> Dark mode aur dynamic content.</li>
+            </ul>
+            <div class="progress-bar"><div class="progress js-progress"></div></div>
+            <span>Expertise Level: 75%</span>
+        </div>
+
+        <div id="excel-info" class="skill-content">
+            <h3>Advanced MS Excel</h3>
+            <p>Data analysis aur management ka wasee tajurba hai.</p>
+            <ul class="detail-list">
+                <li><b>Formulas:</b> VLOOKUP, XLOOKUP, IF (70+ formulas).</li>
+                <li><b>Data:</b> Pivot Tables aur Data Entry.</li>
+                <li><b>Projects:</b> Automation aur professional reporting.</li>
+            </ul>
+            <div class="progress-bar"><div class="progress excel-progress"></div></div>
+            <span>Expertise Level: 95%</span>
+        </div>
+
+    </div> </section>
+
+
+</section>
+
+<section id="projects">
+    <h2>My Key Projects</h2>
+    <div class="projects-grid">
+        
+        <div class="project-card">
+            <h3>Pro-Earn Web Platform</h3>
+            <p>Ye ek mukammal earning website hai jise maine HTML, CSS, aur JavaScript ke zariye develop kiya hai. Is mein registration, dynamic user dashboards, aur deposit systems shamil hain.</p>
+            <ul class="project-features">
+                <li>Admin Panel integration for management.</li>
+                <li>Secure login aur referral system.</li>
+                <li>Responsive design jo mobile aur desktop dono par chalta hai.</li>
+            </ul>
+        </div>
+
+        <div class="project-card">
+            <h3>Custom Web Solutions</h3>
+            <p>Maine mukhtalif kism ki dynamic websites design ki hain jo real-time data handling aur interactive UI (User Interface) par mushtamil hain.</p>
+            <ul class="project-features">
+                <li>Firebase database integration ka tajurba.</li>
+                <li>GitHub aur Netlify ke zariye live hosting.</li>
+                <li>API handling aur dynamic content loading.</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
